@@ -31,11 +31,14 @@ body {
 /******************* Base-style ************************/
 /******************* Кнопки ************************/
 .btn {
+  position: relative;
+  z-index: 100;
   line-height: 21px;
   text-decoration: none;
   font-size: 20px;
   text-shadow: 0 1px 1px white;
   color: #151515;
+  white-space: normal;
   background-color: #fdc205;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fdc205), to(#fde305));
   background-image: -webkit-linear-gradient(bottom, #fdc205 0%, #fde305 100%);
@@ -45,29 +48,47 @@ body {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
   border: none;
-  outline: none !important;
-  -webkit-transition: all 0.9s;
-  transition: all 0.9s;
-  white-space: normal; }
+  outline: none !important; }
 
-.btn:hover {
-  color: #151515;
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  height: 100%;
+  width: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#21a3ee), to(#7bdeff));
   background-image: -webkit-linear-gradient(bottom, #21a3ee 0%, #7bdeff 100%);
   background-image: linear-gradient(to top, #21a3ee 0%, #7bdeff 100%);
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
-  -webkit-animation: background 2s infinite alternate;
-          animation: background 2s infinite alternate; }
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
 
-.btn:active {
-  color: #151515;
+.btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  height: 100%;
+  width: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#7bdeff), to(#21a3ee));
   background-image: -webkit-linear-gradient(bottom, #7bdeff 0%, #21a3ee 100%);
   background-image: linear-gradient(to top, #7bdeff 0%, #21a3ee 100%);
   -webkit-box-shadow: inset 0 0 10px rgba(1, 56, 85, 0.5);
           box-shadow: inset 0 0 10px rgba(1, 56, 85, 0.5);
-  background-position: 0 -102%; }
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
+
+.btn:hover:before {
+  opacity: 1; }
+
+.btn:active:after {
+  opacity: 1; }
 
 .btn:focus, .btn:visited {
   color: #151515;
@@ -76,6 +97,53 @@ body {
   background-image: -webkit-linear-gradient(bottom, #fdc205 0%, #fde305 100%);
   background-image: linear-gradient(to top, #fdc205 0%, #fde305 100%); }
 
+/*
+.btn {
+    background-size: 100%;
+    background-image: -webkit-linear-gradient(#fdc205, #fde305);
+    background-image: linear-gradient(#fdc205, #fde305);
+    position: relative;
+    z-index: 100;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.45rem;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    color: #333;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.725rem 0.975rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    &:before {
+        border-radius: inherit;
+        background-image: -webkit-linear-gradient(#21a3ee, #7bdeff);
+        background-image: linear-gradient(#21a3ee, #7bdeff);
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -100;
+        -webkit-transition: opacity 0.45s ease-in-out;
+        transition: opacity 0.45s ease-in-out;
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+*/
 .btn-size1 {
   width: 166px;
   padding: 19.5px 12px; }
