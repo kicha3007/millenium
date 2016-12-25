@@ -366,7 +366,11 @@ input[type="radio"]:focus, input[type="checkbox"]:focus {
 
 .work-list_img {
   width: 555px;
-  height: 280px; }
+  height: 280px;
+  overflow: hidden; }
+
+.work-list_img img {
+  width: 100%; }
 
 .work-list2_item {
   float: left;
@@ -833,6 +837,7 @@ transition: all 0.4s;
 .work-process {
   padding-top: 30px;
   padding-left: 12px;
+  padding-bottom: 12px;
   margin-bottom: 32px;
   background: url(../img/work-process_bg.jpg); }
 
@@ -876,6 +881,7 @@ transition: all 0.4s;
 
 /******************* price ************************/
 .price_form {
+  margin-top: 27px;
   padding-bottom: 11px; }
 
 .price_form label {

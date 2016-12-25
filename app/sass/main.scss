@@ -392,6 +392,10 @@ input[type="radio"]:focus, input[type="checkbox"]:focus {
     &_img {
         width: 555px;
         height: 280px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -878,6 +882,7 @@ transition: all 0.4s;
 .work-process {
     padding-top: 30px;
     padding-left: 12px;
+    padding-bottom: 12px;
     margin-bottom: 32px;
     background: url(../img/work-process_bg.jpg);
     &_item {
@@ -924,6 +929,7 @@ transition: all 0.4s;
 /******************* price ************************/
 
 .price_form {
+    margin-top: 27px;
     padding-bottom: 11px;
     label {
         color: #0e0e0e;
