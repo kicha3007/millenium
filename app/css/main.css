@@ -227,9 +227,14 @@ input[type="radio"]:focus, input[type="checkbox"]:focus {
   width: 550px;
   text-transform: uppercase;
   line-height: 45px;
-  font-size: 30px; }
+  font-size: 30px;
+  text-align: justify;
+  -moz-text-align-last: justify;
+  text-align-last: justify;
+  letter-spacing: 2px; }
 
 .logo_text:first-line {
+  letter-spacing: normal;
   font-size: 75px;
   font-family: 'AvantGardeCTT Bold', arial, sans-serif; }
 
@@ -523,9 +528,17 @@ input:-ms-input-placeholder {
 
 .main-footer_copyright {
   float: left;
+  width: 380px;
   margin-top: 17px;
   vertical-align: middle;
   line-height: 26px; }
+
+.main-footer_copyright span {
+  min-width: 380px;
+  display: inline-block;
+  text-align: justify;
+  -moz-text-align-last: justify;
+  text-align-last: justify; }
 
 .main-footer_creators {
   float: right;

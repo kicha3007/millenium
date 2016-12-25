@@ -247,7 +247,12 @@ input[type="radio"]:focus, input[type="checkbox"]:focus {
         text-transform: uppercase;
         line-height: 45px;
         font-size: 30px;
+        text-align: justify;
+        -moz-text-align-last: justify;
+        text-align-last: justify;
+        letter-spacing: 2px;
         &:first-line {
+            letter-spacing: normal;
             font-size: 75px;
             font-family: 'AvantGardeCTT Bold', arial, sans-serif;
         }
@@ -555,9 +560,17 @@ input:-ms-input-placeholder {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
     &_copyright {
         float: left;
+        width: 380px;
         margin-top: 17px;
         vertical-align: middle;
         line-height: 26px;
+        span{
+            min-width: 380px;
+            display: inline-block;
+            text-align: justify;
+            -moz-text-align-last: justify;
+            text-align-last: justify;
+        }
     }
     &_creators {
         float: right;
@@ -583,7 +596,7 @@ input:-ms-input-placeholder {
     }
 }
 
-/******************* модальное окно ************************/
+    /******************* модальное окно ************************/
 
 .modal {
     .modal-dialog {
