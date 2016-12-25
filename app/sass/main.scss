@@ -750,7 +750,6 @@ transition: all 0.4s;
         margin-bottom: 21px;
         width: 652px;
         height: 370px;
-        background: green;
     }
     &_text {
         float: left;
@@ -1237,39 +1236,22 @@ transition: all 0.4s;
 
 /******************* slider ************************/
 
-
-.slider1920 .owl-nav{
-    width: 1170px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-
-
-
 .lSSlideOuter.vertical .lSGallery {
-    left: 0px;
-    width: 126px !important;
+    width: 67px !important;
     margin-left: 0 !important;
-    padding: 3px;
+    padding-top: 26px;
     height: inherit !important;
 }
 
 .lSSlideOuter.vertical {
     padding-right: 0px !important;
-    padding-left: 129px;
 }
 
 .lSSlideOuter.vertical .lSGallery li {
-    width: 115px !important;
-    height: 78px !important;
-    margin-left: 3px;
+    float: right;
+    width: 67px !important;
+    height: 44px !important;
+
 }
 
 .lSSlideOuter .lSPager.lSGallery li.active,
@@ -1282,6 +1264,27 @@ transition: all 0.4s;
     min-height: 100%;
 }
 
+.lSSlideOuter.vertical .lSAction > .lSPrev {
+    top: 0;
+    background: url(../img/slider_arrow.png) no-repeat;
+    transform: scale(1, -1);
+}
+
+.lSSlideOuter.vertical .lSAction > .lSNext {
+    bottom: 0;
+    background: url(../img/slider_arrow.png) no-repeat;
+}
+
+.lSSlideOuter.vertical .lSAction > a {
+    left: 608px;
+    margin: 0;
+}
+
+.lSAction > a {
+    width: 22px;
+    height: 14px;
+    opacity: 1;
+}
 
 
 

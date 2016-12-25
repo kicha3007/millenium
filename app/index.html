@@ -4,21 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Милленниум</title>
+    <title>Миллениум</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="lib/lightslider/css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="libs/lightslider/css/lightslider.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<div class="wrapper main-page">
+<div class="wrapper">
     <div class="main-header">
         <div class="container">
-            <div class="main-header_top">
+            <div class="main-header_top clearfix">
                 <div class="logo">
                     <a href="/">
                         <div class="logo_text">
@@ -85,127 +84,153 @@
                 </ul>
             </div>
         </nav>
-        <div class="main-header_bottom clearfix">
-            <div class="container">
-                <div class="main-header_box">
-                    Для юридических лиц
-                </div>
-                <div class="main-header_box">
-                    Для физических лиц
-                </div>
-            </div>
-        </div>
     </div>
     <section class="content">
         <div class="container">
-            <h1>
-                Электромонтажные работы и услуги электролаборатории в Тюмени и Тюменской области
-            </h1>
-            <div class="main-services clearfix">
-                <a class="main-services_link" href="">
-                    <ul class="main-services_list main-services_left">
-                        <li>
-                            <span>Услуги электролаборатории</span>
-
-                        </li>
-                        <li>
-                            Проектные работы
-                        </li>
-                        <li>
-                            Пусконаладочные работы
-                        </li>
-                        <li>
-                            Электромонтажные работы
-                        </li>
-                    </ul>
-                </a>
-                <a class="main-services_link" href="">
-                    <ul class="main-services_list main-services_right">
-                        <li>
-                            Монтаж электросетей
-                        </li>
-                        <li>
-                            Проектирование электросетей
-                        </li>
-                        <li>
-                            Установка опор на участке
-                        </li>
-                        <li>
-                            Ремонт проводки в доме/квартире
-                        </li>
-                    </ul>
-                </a>
-
+            <div class="bread">
+                <a href="#">Главная</a>
+                <span class="bread-separator">/</span>
+                <a href="#">Наши работы</a>
+                <span class="bread-separator">/</span>
+                <a href="#">Промышленные объекты</a>
+                <span class="bread-separator">/</span>
+                <span>Название объекта</span>
             </div>
-            <div class="objects clearfix">
-                <h2>
-                    Наши объекты
-                </h2>
-                <div class="objects_wrap">
-                    <a class="objects_item" href="#">
-                        <div class="objects_img">
-                            <img src="img/home1.jpg" alt="">
+            <h1>
+                Промышленные объекты
+            </h1>
+            <div class="object">
+                <div class="object_slider">
+                    <ul class="vertical-slider">
+                        <li data-thumb="img/slide.jpg" data-src="img/slide.jpg">
+                            <img src="img/slide.jpg"/>
+                        </li>
+                        <li data-thumb="img/slide.jpg" data-src="img/slide.jpg">
+                            <img src="img/slide.jpg"/>
+                        </li>
+                        <li data-thumb="img/slide.jpg" data-src="img/slide.jpg">
+                            <img src="img/slide.jpg"/>
+                        </li>
+                        <li data-thumb="img/slide.jpg" data-src="img/slide.jpg">
+                            <img src="img/slide.jpg"/>
+                        </li>
+                        <li data-thumb="img/slide.jpg" data-src="img/slide.jpg">
+                            <img src="img/slide.jpg"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="object_text">
+                    <div class="object_title">
+                        Описание объекта 
+                    </div>
+                    <div class="object_subtitle">
+                        Период выполнения работ: 2016г.
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+                        Cum
+                        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                        nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+                        Cum
+                        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                        nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+                    </p>
+                </div>
+                <div class="object_title">
+                    Описание объекта 
+                </div>
+                <div class="object_list">
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+                            dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+                            sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                            rhoncus sapien nunc eget odio.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit Proin sodales pulvinar tempor.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit Cum sociis natoque penatibus et
+                            magnis
+                            dis parturient montes, nascetur idiculus mus.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit
+                        </li>
+                    </ul>
+                </div>
+                <div class="reviews clearfix">
+                    <div class="object_title">
+                        Отзыв
+                    </div>
+                    <div class="reviews_wrap">
+                        <div class="reviews_img">
+                            <img src="img/reviews1.jpg" alt="">
                         </div>
-                            <div class="objects_title">
-                            <h4>
-                                Название объекта “Промышленный объект”
-                            </h4>
+                        <div class="reviews_text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                                mollis orci, sed rhoncus sapien nunc eget odio.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                                mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                                accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla
+                                luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus
+                                mollis orci, sed rhoncus sapien nunc eget odio.
+                            </p>
+
                         </div>
-                    </a>
-                    <a class="objects_item" href="#">
-                        <div class="objects_img">
-                            <img src="img/home1.jpg" alt="">
-                        </div>
-                        <div class="objects_title">
-                            <h4>
-                                Название объекта “Промышленный объект”
-                            </h4>
-                        </div>
-                    </a>
-                    <a class="objects_item" href="#">
-                        <div class="objects_img">
-                            <img src="img/home1.jpg" alt="">
-                        </div>
-                        <div class="objects_title">
-                            <h4>
-                                Название объекта “Промышленный объект”
-                            </h4>
-                        </div>
-                    </a>
-                    <a class="objects_item" href="#">
-                        <img src="img/home4.jpg" alt="" class="objects_img">
-                        <div class="objects_title">
-                            <h4 class="main--title">
-                                Название объекта “Частный объект”
-                            </h4>
-                        </div>
-                    </a>
-                    <a class="objects_item" href="#">
-                        <div class="objects_img">
-                            <img src="img/home1.jpg" alt="">
-                        </div>
-                        <div class="objects_title">
-                            <h4>
-                                Название объекта “Частный объект”
-                            </h4>
-                        </div>
-                    </a>
-                    <a class="objects_item" href="#">
-                        <div class="objects_img">
-                            <img src="img/home1.jpg" alt="">
-                        </div>
-                        <div class="objects_title">
-                            <h4>
-                                Название объекта “Частный объект”
-                            </h4>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
-            <div class="main-callback clearfix">
-
+            <div class="main-callback main-callback--all clearfix">
                 <div class="main-callback_title">
-                    У вас есть вопросы? Закажите бесплатную  консультацию
+                    <p>
+                        <span>Оcстались вопросы?</span>
+                    </p>
+                    ОСТАВЬТЕ ЗАПРОС И НАШ СПЕЦИАЛИСТ С ВАМИ СВЯЖЕТСЯ
                 </div>
                 <form class="callback_form form-ajax" action="#" method="POST" data-validate-fields="callback_fields">
                     <div class="form-group">
@@ -221,16 +246,14 @@
                     </div>
                 </form>
             </div>
-
         </div>
     </section>
 </div>
 <!-- wrapper-end -->
-
 <footer class="main-footer">
     <div class="container">
         <div class="main-footer_copyright">
-            ИНН    000000000000000    ОГРН   00000000000000000000<br>
+            ИНН 000000000000000 ОГРН 00000000000000000000<br>
             &copy 2016 ООО «Милленниум»
         </div>
         <div class="main-footer_creators">
@@ -243,7 +266,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button class="close" type="button"  data-dismiss="modal" aria-label="Close"><span aria-hidden="true" > <img
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true"> <img
                         src="img/modal_close.png" alt=""> </span>
                 </button>
                 <div class="modal-title">
@@ -260,7 +284,7 @@
                         <input class="form-control" name="phone" type="tel" placeholder="Ваш номер телефона *">
                     </div>
                     <div class="form-group">
-                        <input class="checkbox" name="checkbox" id="checkbox" type="checkbox" >
+                        <input class="checkbox" name="checkbox" id="checkbox" type="checkbox">
                         <label for="checkbox">Разрешить обработку персональных данных</label>
                     </div>
                     <div class="form-group">
@@ -268,15 +292,14 @@
                             Отправить запрос
                         </button>
                     </div>
-
                 </form>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="lib/lightslider/js/lightslider.js"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="libs/lightslider/js/lightslider.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
 </html>
