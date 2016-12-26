@@ -354,6 +354,7 @@ input[type="radio"]:focus, input[type="checkbox"]:focus {
 
 /******************* objects ************************/
 .objects {
+  margin-bottom: 12px;
   padding-left: 15px;
   background-color: rgba(255, 255, 255, 0.21);
   border: 1px solid rgba(209, 209, 209, 0.21); }
@@ -369,7 +370,7 @@ input[type="radio"]:focus, input[type="checkbox"]:focus {
 .objects_item {
   float: left;
   margin-right: 28px;
-  margin-bottom: 31px;
+  margin-bottom: 19px;
   width: 165px;
   text-decoration: none; }
 
